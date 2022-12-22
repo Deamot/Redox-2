@@ -13,7 +13,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_0 {
             // --------------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
             // | TAB   |  Q  |  W  |   E   |  R  |  T  |   (   |           ---        |  )    |  Y    |  U    |  I    |  O   | P  |     -     |
@@ -30,7 +30,7 @@
             >;
         };
 
-        lower_layer {
+        layer_1 {
             // --------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
@@ -47,7 +47,7 @@
             >;
         };
 
-        raise_layer {
+        layer_2 {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
             // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
@@ -64,7 +64,7 @@
             >;
         };
 
-        adjust_layer {
+        layer_3 {
             // -----------------------------------------------------------------------------------------
             // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
             // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
@@ -73,7 +73,7 @@
             // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
 
             bindings = <
-              &kp F1             &kp F2        &kp F3          &kp F4   &kp F5     &kp F6                                                                &kp F7                &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
+             &kp F11             &kp F1        &kp F2          &kp F3   &kp F4     &kp F5                                                                &kp F6                &kp F7        &kp F8        &kp F9       &kp F10       &kp F11
            &kp GRAVE              &kp Y         &kp U           &kp I    &kp O      &kp P     &kp BACKSPACE                            &bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG
            &kp ENTER              &kp H         &kp J           &kp K    &kp L   &kp SEMI  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET        &kp F1                &kp F2        &kp F3        &kp F4        &kp F5        &kp F6
  &mt RIGHT_SHIFT SQT              &kp N         &kp M       &kp COMMA  &kp DOT  &kp SLASH         &kp MINUS  &kp EQUAL  &trans             &trans        &kp F7                &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
